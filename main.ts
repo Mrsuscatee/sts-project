@@ -73,8 +73,8 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . f f f f f f f f . . . . 
         . . . . . . . . . f f f . . . . 
         `],
-    500,
-    false
+    1000000,
+    true
     )
 })
 sprites.on_fire_created(function (location) {
@@ -175,8 +175,8 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . f f f f f f . . . . . . 
         . . . . . . f f f . . . . . . . 
         `],
-    500,
-    false
+    1000,
+    true
     )
 })
 sprites.on_fire_destroyed(function (location) {
@@ -272,8 +272,8 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . . . f f f f f f . . . . 
         . . . . . . . f f f . . . . . . 
         `],
-    500,
-    false
+    1000,
+    true
     )
 })
 scene.onOverlapTile(SpriteKind.Water, assets.tile`tree fire`, function (sprite, location) {
@@ -369,8 +369,8 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . . f f f f f f . . f . . 
         . . . . . f f . . f f . . . . . 
         `],
-    500,
-    false
+    1000,
+    true
     )
 })
 controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
