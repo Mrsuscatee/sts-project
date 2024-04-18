@@ -392,7 +392,7 @@ let ammoleft = 0
 let mySprite: Sprite = null
 music.play(music.stringPlayable("E B C G E B D G ", 90), music.PlaybackMode.LoopingInBackground)
 game.showLongText("A person threw junk in the forest and lit it up. It is up to you to put out the fire. Good luck. Move with WASD keys and hold space bar to shoot water. The forest's life are in your hand. Remember, you only have 30 lives. Also don't forget to spread the word about not lighting junk up in the forest.", DialogLayout.Center)
-game.set_dryness_of_grass(10)
+game.set_dryness_of_grass(15)
 game.set_strength_of_wind(19)
 game.set_health_of_trees(20)
 tiles.setTilemap(tilemap`level10`)
@@ -408,7 +408,7 @@ hud.danger_hud(true)
 hud.forest_hud_healthy(7)
 hud.forest_hud_burned(2)
 ammoleft = 1000
-game.setGameOverEffect(false, effects.clouds)
+game.setGameOverEffect(false, effects.dissolve)
 game.setGameOverEffect(true, effects.confetti)
 game.onUpdate(function () {
     sprites.random_spread()
